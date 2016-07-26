@@ -126,6 +126,7 @@ void ESP8266WiFiMesh::attemptScan(String message)
 {
 	/* Scan for APs */
 	int n = WiFi.scanNetworks();
+	delay(0);
 
 	for (int i = 0; i < n; ++i) {
 		String current_ssid = WiFi.SSID(i);
